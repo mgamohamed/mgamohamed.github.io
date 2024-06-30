@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Modeling of Single Electron Devices</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="../index.html" class="logo">Dive into TECH Space</a>
+		</header>
+
+		<!-- Navigation Bar Placeholder -->
+		<div id="nav-placeholder"></div>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">2006 ~ 2009</span>
+					<h1>Modeling of Single Electron Devices</h1>
+				</header>
+
+				<h2>Single Electron Devices</h2>
+				<div class="image main"><img src="/project/images/SET.png" alt="" /></div>
+				<p>Single electron devices (SEDs) represent a class of nanoscale electronic devices that 
+					operate based on the controlled movement of individual electrons. These devices leverage 
+					quantum mechanical effects, particularly the Coulomb blockade phenomenon, which arises when 
+					the addition of a single electron to a small conductive region (such as a quantum dot or metallic island) 
+					requires a noticeable amount of energy due to electrostatic interactions. This enables precise control over 
+					electronic properties at the atomic or molecular scale, offering unique advantages in terms of power consumption, 
+					device miniaturization, and sensitivity.
+				</p>
+
+				<h2>Key Concepts and Mechanisms</h2>
+				<h3>Coulomb Blockade:</h3>
+				<p>This effect occurs in small conductive regions where the addition of an electron significantly alters the electrostatic 
+					potential. For an electron to enter such a region, it must overcome the Coulomb energy, which is inversely proportional 
+					to the size of the region. As a result, electron flow can be precisely controlled, allowing the device to operate as a 
+					switch or a transistor at the single-electron level.
+				</p>
+				<h3>Quantum Dots and Metallic Islands:</h3>
+				<p>These are the primary structures used in SEDs. Quantum dots are semiconductor nanoparticles that confine electrons in all 
+					three spatial dimensions, creating discrete energy levels. Metallic islands, on the other hand, are small conductive regions 
+					that can hold and release electrons one at a time.
+				</p>
+				<h3>Single Electron Transistor (SET):</h3>
+				<p>One of the most prominent examples of SEDs, the SET consists of a small island connected to source and drain electrodes through
+					 tunnel junctions and a gate electrode that controls the potential of the island. The conductance of the SET can be modulated by 
+					 the gate voltage, enabling it to function similarly to a traditional transistor but with single-electron precision.
+				</p>
+
+				<h2>Applications</h2>
+				<h3>Ultra-Low Power Electronics:</h3>
+				<p>Due to the low energy required to control single electrons, SEDs are highly energy-efficient, making them ideal for applications where power consumption is critical.</p>
+				<h3>Quantum Computing:</h3>
+				<p>SEDs are fundamental components in the development of qubits for quantum computers, where precise control over electron states is essential for quantum logic operations.</p>
+				<h3>Sensitive Charge Detectors:</h3>
+				<p>Their ability to detect and manipulate individual electrons makes SEDs excellent candidates for highly sensitive charge sensors, useful in fields like metrology and medical diagnostics.</p>
+				<h3>Nanoelectronics:</h3>
+				<p>SEDs push the boundaries of miniaturization in electronic circuits, paving the way for the next generation of nanoelectronic devices.</p>
+
+				<h2>Challenges and Future Prospects</h2>
+				<p>While single electron devices offer promising advantages, several challenges need to be addressed for widespread practical implementation:</p>
+				<h3>Temperature Sensitivity:</h3>
+				<p>The Coulomb blockade effects are more pronounced at low temperatures, often requiring cryogenic environments for stable operation. 
+					Research is ongoing to develop materials and structures that can operate effectively at higher temperatures.</p>
+				<h3>Fabrication Precision:</h3>
+				<p>The creation of devices that can manipulate single electrons requires extremely precise fabrication techniques at the nanoscale, which can be complex and costly.</p>
+				<h3>Integration with Existing Technologies:</h3>
+				<p>Integrating SEDs with current semiconductor technologies and scaling up production for commercial applications pose significant engineering challenges.</p>
+				<p>Despite these hurdles, advancements in nanofabrication and material science continue to drive the development of single electron devices, 
+					holding the potential to revolutionize various fields of technology with their unique properties and capabilities.</p>
+
+
+				<h2>Modeling for Single Electron Devices</h2>
+				<p>Modeling single electron devices (SEDs) involves simulating their electrical behavior and understanding the quantum mechanical effects that govern their operation. 
+					Due to the discrete nature of electron transport in these devices, traditional modeling approaches used for larger-scale electronics are often insufficient. 
+					Instead, specialized techniques that account for quantum effects and the stochastic nature of electron tunneling are required.</p>
+
+				<p>I built a mathematical model that is based on Master equation approach. This method involves writing and solving the master equations that describe the probabilities of 
+					different charge states in the device. It accounts for all possible electron transitions between different states, allowing for a detailed understanding of the stochastic 
+					behavior of electron transport.</p>
+				
+				<p>The picture below shows a flow chart for my model that was published in the journal of Microelectronics Reliability</p>
+				<div class="image main"><img src="/project/images/SET_Model.png" alt="" /></div>
+				
+				<p>Here is a result of simulating single electron transistor with a sweep of drain and gate voltages.</p>
+
+				<div class="image main"><img src="/project/images/SET_sim.png" alt="" /></div>
+
+				<p>The Plots below shows how the probabilitiesof of different charge states change with the sweep of gate and drain voltages.</p>
+
+				<div class="image main"><img src="/project/images/SET_Prob0.png" alt="" /></div>
+				<div class="image main"><img src="/project/images/SET_Prob1.png" alt="" /></div>
+
+				<p>I published my models in a github repo. Please check it <a href="https://github.com/mgamohamed/set" target="_blank">here.</a></p>
+				<p>Please visit my publication page to find links for my papers on signle electron devices.</p>
+
+			</section>
+
+		</div>
+
+		<!-- Placeholder for Copyright -->
+		<div id="copyright-placeholder"></div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/script.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
